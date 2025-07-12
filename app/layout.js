@@ -1,9 +1,13 @@
+import Navigation from "./Navigation";
 
 function RootLayout({children}){
 
   return(
     <html>
-      <body>{children}</body>
+      <body>
+        <Navigation/>
+        {children}
+        </body>
     </html>
   );
 };
