@@ -1,5 +1,6 @@
 import Image from "next/image";
 import style from "./service.module.css"
+import sumit_image from "@/public/sumit.jpg"
 const Service = () => {
   return (
     <>
@@ -21,12 +22,14 @@ const Service = () => {
             <div className="bg-white rounded-lg shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
               <div className="relative w-full h-full bg-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Image 
-                src="/sumit.jpg" 
+                src={sumit_image} 
                 alt="Samhita" 
                 fill={true}
                 quality={100}
                 priority={false}
                 className="rounded-2xl"
+                placeholder="blur"
+                blurDataURL=""
                 />
               </div>
               <h3 className="text-lg font-semibold text-center text-gray-800">Samhita Technical</h3>
