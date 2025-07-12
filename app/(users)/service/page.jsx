@@ -1,4 +1,3 @@
-import Image from "next/image";
 import style from "./service.module.css"
 const Service = () => {
   return (
