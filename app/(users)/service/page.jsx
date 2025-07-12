@@ -19,7 +19,7 @@ const Service = () => {
               <p className="text-xs text-gray-500 text-center mt-1">React & Typescript</p>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-              <div className="relative w-24 h-24 bg-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <div className="relative w-full h-full bg-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <Image 
                 src="/sumit.jpg" 
                 alt="Samhita" 
