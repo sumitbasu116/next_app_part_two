@@ -24,6 +24,7 @@ const Service = () => {
                 src="/sumit.jpg" 
                 alt="Samhita" 
                 fill={true}
+                className="rounded-2xl"
                 />
               </div>
               <h3 className="text-lg font-semibold text-center text-gray-800">Samhita Technical</h3>
