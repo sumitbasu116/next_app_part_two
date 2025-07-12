@@ -24,6 +24,7 @@ const Service = () => {
                 src="/sumit.jpg" 
                 alt="Samhita" 
                 fill={true}
+                quality={10}
                 className="rounded-2xl"
                 />
               </div>
