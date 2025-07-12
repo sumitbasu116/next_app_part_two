@@ -1,7 +1,7 @@
 const Home=()=>{
   return(
     <>
-    <h1>Hello World Next JS!!</h1>
+    <h1>Hello World Admin Next JS!!</h1>
     </>
   )
 };

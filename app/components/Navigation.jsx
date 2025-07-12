@@ -8,16 +8,16 @@ export default function Navigation(){
         <nav>
             <ul className="flex gap-4">
                 <li>
-                    <Link href="/">Home</Link>
+                    <Link href="/users">Home</Link>
                 </li>
                 <li>
-                    <Link href="/about">About</Link>
+                    <Link href="/users/about">About</Link>
                 </li>
                 <li>
-                    <Link href="/contact">Contact</Link>
+                    <Link href="/users/contact">Contact</Link>
                 </li>
                 <li>
-                    <Link href="/service">Service</Link>
+                    <Link href="/users/service">Service</Link>
                 </li>
             </ul>
         </nav>
