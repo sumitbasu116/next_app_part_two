@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navigation from "./Navigation";
+import Navigation from "./components/Navigation";
 
 function RootLayout({children}){
 
