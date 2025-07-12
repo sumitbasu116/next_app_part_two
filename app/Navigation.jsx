@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navigation(){
 
     return(
@@ -6,16 +8,16 @@ export default function Navigation(){
         <nav>
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                    <Link href="/about">About</Link>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                    <Link href="/contact">Contact</Link>
                 </li>
                 <li>
-                    <a href="/service">Service</a>
+                    <Link href="/service">Service</Link>
                 </li>
             </ul>
         </nav>
