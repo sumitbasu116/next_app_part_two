@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navigation(){
 
     return(
-        <header className="grid grid-cols-2 font-roboto-w">
+        <header className="grid grid-cols-2 font-work">
             <div>Sumit Logo</div>
         <nav>
             <ul className="flex gap-4">
