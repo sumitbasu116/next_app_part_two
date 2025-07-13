@@ -4,12 +4,14 @@ import {Roboto} from "next/font/google";
 import { Work_Sans } from "next/font/google";
 
 const roboto = Roboto({
-  subsets:["latin"]
+  subsets:["latin"],
+  variable:"--font-roboto"
 });
 
 const workSans = Work_Sans(
   {
-    subsets:["latin"]
+    subsets:["latin"],
+    variable:"--font-work-sans"
   }
 )
 
@@ -17,7 +19,7 @@ function RootLayout({children}){
 
   return(
     <html>
-      <body className={workSans.className}>
+      <body className={`${roboto.variable} ${workSans.variable}`}>
         <Navigation/>
         {children}
         </body>
