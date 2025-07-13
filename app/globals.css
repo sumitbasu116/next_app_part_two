@@ -7,3 +7,8 @@ a:hover{
 .common_heading{
     color: red;
 }
+
+@theme inline {
+    --font-roboto: var(--font-roboto);
+    --font-work: var(--font-work-sans)
+}
