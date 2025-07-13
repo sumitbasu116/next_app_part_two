@@ -10,5 +10,6 @@ a:hover{
 
 @theme inline {
     --font-roboto: var(--font-roboto);
-    --font-work: var(--font-work-sans)
+    --font-work: var(--font-work-sans);
+    --font-roboto-w: var(--font-roboto-weight);
 }

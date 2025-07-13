@@ -8,6 +8,12 @@ const roboto = Roboto({
   variable:"--font-roboto"
 });
 
+const robotoWeight = Roboto({
+  subsets:["latin"],
+  weight:"500",
+  variable:"--font-roboto-weight"
+});
+
 const workSans = Work_Sans(
   {
     subsets:["latin"],
@@ -19,7 +25,7 @@ function RootLayout({children}){
 
   return(
     <html>
-      <body className={`${roboto.variable} ${workSans.variable}`}>
+      <body className={`${roboto.variable} ${workSans.variable} ${robotoWeight.variable}`}>
         <Navigation/>
         {children}
         </body>

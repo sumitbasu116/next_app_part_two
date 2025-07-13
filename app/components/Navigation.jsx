@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Navigation(){
 
     return(
-        <header className="grid grid-cols-2">
+        <header className="grid grid-cols-2 font-roboto-w">
             <div>Sumit Logo</div>
-        <nav className="font-work">
+        <nav>
             <ul className="flex gap-4">
                 <li>
                     <Link href="/">Home</Link>
