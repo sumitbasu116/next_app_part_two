@@ -3,7 +3,10 @@ import style from "./service.module.css"
 import sumit_image from "@/public/sumit.jpg"
 
 export const metadata={
-  title: "Service Page"
+  title: "Service Page",
+  description:"This is my Service Page",
+  authors:[{name:"Sumit"},{name:"Sumit Technical",url:"sumitbasu.com"}],
+  keywords:["nextjs","fullstack","reactjs"]
 }
 
 const Service = () => {
