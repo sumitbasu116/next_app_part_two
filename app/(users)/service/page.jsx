@@ -1,6 +1,11 @@
 import Image from "next/image";
 import style from "./service.module.css"
 import sumit_image from "@/public/sumit.jpg"
+
+export const metadata={
+  title: "Service Page"
+}
+
 const Service = () => {
   return (
     <>
