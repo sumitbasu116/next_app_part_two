@@ -1,7 +1,7 @@
 const Home=()=>{
   return(
     <>
-    <h1 className="common_heading">Hello World Users Next JS!!</h1>
+    <h1 className="font-roboto">Hello World Users Next JS!!</h1>
     </>
   )
 };

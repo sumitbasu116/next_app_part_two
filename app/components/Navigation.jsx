@@ -5,7 +5,7 @@ export default function Navigation(){
     return(
         <header className="grid grid-cols-2">
             <div>Sumit Logo</div>
-        <nav>
+        <nav className="font-work">
             <ul className="flex gap-4">
                 <li>
                     <Link href="/">Home</Link>
