@@ -1,12 +1,10 @@
 const SingleProfilePost = async (props)=>{
     
     
-    const userPost = await props.params;
-
-    console.log(userPost.statusId);
+    const user = await props.params;
 
     return(
-        <h1>Hello User Post : {userPost.statusId}</h1>
+        <h1>Hello User :{user.username} , Post : {user.statusId}</h1>
     )
 }
 
