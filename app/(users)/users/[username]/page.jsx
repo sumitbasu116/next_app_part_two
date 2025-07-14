@@ -1,12 +1,12 @@
 const SingleProfile = async (props)=>{
     
     
-    const name = await props.params;
+    const user = await props.params;
 
-    console.log(name);
+    console.log(user.userName);
 
     return(
-        <h1>Hello Single Name</h1>
+        <h1>Hello User : {user.userName}</h1>
     )
 }
 
