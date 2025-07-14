@@ -3,10 +3,10 @@ const SingleProfile = async (props)=>{
     
     const user = await props.params;
 
-    console.log(user.userName);
+    console.log(user.username);
 
     return(
-        <h1>Hello User : {user.userName}</h1>
+        <h1>Hello User : {user.username}</h1>
     )
 }
 
