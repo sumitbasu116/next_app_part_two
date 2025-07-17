@@ -8,7 +8,7 @@ const ProductList = ()=>{
 
     console.log('inside',searchParamData);
     
-    const page=searchParamData.get('page');
+    const page=searchParamData.getAll('page');
     const category = searchParamData.get('category');
     console.log('page:',page+" category:",category);
 
