@@ -1,9 +1,9 @@
 
 const Products = async ({searchParams})=>{
-    
-    const category = searchParams?.category || "all";
-    const sort = searchParams?.sort || "default";
-    const page=searchParams?.page || 1;
+    const searchParamsData = await searchParams;
+    const category = searchParamsData?.category || "all";
+    const sort = searchParamsData?.sort || "default";
+    const page=searchParamsData?.page || 1;
     
     return(
         <div>
