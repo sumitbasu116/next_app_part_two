@@ -1,7 +1,11 @@
-const SingleProfilePost = async (props)=>{
+'use client';
+
+import { use } from "react";
+
+const SingleProfilePost =  (props)=>{
     
     
-    const user = await props.params;
+    const user = use( props.params);
 
     return(
         <h1>Hello User :{user.username} , Post : {user.statusId}</h1>
