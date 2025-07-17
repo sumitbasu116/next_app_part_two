@@ -1,6 +1,7 @@
 
 const Products = async (props)=>{
-    console.log(props.searchParams);
+    const searchParamsData = await props.searchParams;
+    console.log(searchParamsData);
     
     return(
         <h1>Hello Products</h1>
