@@ -1,5 +1,10 @@
-const DataFetchServer = async ()=>{
-    const res = await fetch("https://api.genderize.io/?name=Sumit");
+const DataFetchServer = async (props)=>{
+    
+    const searchParams= await props.searchParams;
+
+    const name = searchParams.name;
+
+    const res = await fetch(`https://api.genderize.io/?name=${name}`);
     const data = await res.json();
     console.log(data);
     
