@@ -39,7 +39,8 @@ const DataFetchServer = (props) => {
     }, []);
 
     console.log(userInfo);
-
+    const isMale = userInfo.gender;
+    const confidencePercentage = userInfo.probability * 100;
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
             <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full relative overflow-hidden">
@@ -66,7 +67,7 @@ const DataFetchServer = (props) => {
                         </div>
 
                         <h1 className="text-3xl font-bold text-gray-800 mb-2 capitalize">
-                            {userData.name}
+                            {userInfo.name}
                         </h1>
 
                         <div
@@ -79,8 +80,8 @@ const DataFetchServer = (props) => {
                                 className={`w-2 h-2 rounded-full mr-2 ${isMale ? "bg-blue-500" : "bg-pink-500"
                                     }`}
                             ></span>
-                            {userData.gender.charAt(0).toUpperCase() +
-                                userData.gender.slice(1)}
+                            {userInfo.gender.charAt(0).toUpperCase() +
+                                userInfo.gender.slice(1)}
                         </div>
                     </div>
 
@@ -116,7 +117,7 @@ const DataFetchServer = (props) => {
                                     Data Sample Size
                                 </span>
                                 <span className="text-sm font-bold text-gray-800">
-                                    {userData.count.toLocaleString()}
+                                    {userInfo.count.toLocaleString()}
                                 </span>
                             </div>
                         </div>
