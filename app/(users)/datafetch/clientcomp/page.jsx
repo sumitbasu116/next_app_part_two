@@ -38,6 +38,8 @@ const DataFetchServer = (props) => {
         revealUserGender();
     }, []);
 
+    if(!userInfo.gender) return null;
+
     console.log(userInfo);
     const isMale = userInfo.gender;
     const confidencePercentage = userInfo.probability * 100;
