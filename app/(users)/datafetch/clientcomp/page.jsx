@@ -7,7 +7,7 @@ const DataFetchServer =  (props) => {
 
     const searchParams = useSearchParams();
 
-    const userName = searchParams.name;
+    const userName = searchParams.get('name');
 
     if (!userName) {
     return (
