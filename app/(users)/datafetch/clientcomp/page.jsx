@@ -1,10 +1,12 @@
 'use client'
 import { User, Users, Star, TrendingUp } from "lucide-react";
 import { useSearchParams } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 
 const DataFetchServer = (props) => {
+
+    const [userInfo,setUserInfo] = useState({});
 
     const searchParams = useSearchParams();
 
@@ -31,13 +33,12 @@ const DataFetchServer = (props) => {
         const revealUserGender = async () => {
             const res = await fetch(`https://api.genderize.io/?name=${userName}`);
             const userData = await res.json();
-            const isMale = userData.gender == 'male';
-            const confidencePercentage = userData.probability * 100;
+            setUserInfo(userData);
         };
         revealUserGender();
     }, []);
 
-    console.log(userData);
+    console.log(userInfo);
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
