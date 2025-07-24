@@ -13,3 +13,10 @@ a:hover{
     --font-work: var(--font-work-sans);
     --font-roboto-w: var(--font-roboto-weight);
 }
+
+.loading-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
