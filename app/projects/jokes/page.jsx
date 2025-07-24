@@ -20,6 +20,13 @@ const RandomJokes = ()=>{
             fetchRandomJokes();
         },[]
     );
+
+    return(
+        <>
+        <p>{randomJokes.setup}</p>
+        <h2>{randomJokes.punchline}</h2>
+        </>
+    );
 };
 
 export default RandomJokes;
