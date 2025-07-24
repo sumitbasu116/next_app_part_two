@@ -1,8 +1,11 @@
 'use client';
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const RandomJokes = ()=>{
+    
+    const [randomJokes,setRandomJokes] = useState({});
+
     const URL = 'https://official-joke-api.appspot.com/random_joke';
     const fetchRandomJokes = async ()=>{
         const res = await fetch(URL);
@@ -10,6 +13,7 @@ const RandomJokes = ()=>{
 
         console.log(data);
         
+        setRandomJokes(data);
     }
     useEffect(
         ()=>{
