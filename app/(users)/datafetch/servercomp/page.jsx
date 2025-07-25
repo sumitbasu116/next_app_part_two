@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import DataCard from "./datacard";
 
 
@@ -37,7 +38,9 @@ const DataFetchServer = async (props) => {
         </h2>
       </div>
     <div>
+      <Suspense>
       <DataCard userName={userName} />
+      </Suspense>
     </div>
     </div>
   );
