@@ -1,5 +1,6 @@
 import { Suspense } from "react";
-import DataCard from "./datacard";
+import DataCard from "./Datacard";
+import Loading from "./Loading";
 
 
 const DataFetchServer = async (props) => {
@@ -38,7 +39,7 @@ const DataFetchServer = async (props) => {
         </h2>
       </div>
     <div>
-      <Suspense fallback={<div><h1>Loading....</h1></div>}>
+      <Suspense fallback={<Loading/>}>
       <DataCard userName={userName} />
       </Suspense>
     </div>
