@@ -7,6 +7,8 @@ const DataFetchServer = async (props) => {
 
   const userName = searchParams.name;
 
+  
+
   if (!userName) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
@@ -25,8 +27,18 @@ const DataFetchServer = async (props) => {
   }
 
   return (
+    <div className="grid grid-cols-2 gap-3 h-full ">
+      <div className="h-full flex justify-center items-center ">
+        <h2>
+          Hii I am 1st component.In Loading.jsx I have to wait but in Suspense I
+          don't. I support partial rendering. This means you can show a fallback
+          UI (like a loading spinner or skeleton) for specific components while
+          the rest of your application renders and remains interactive.
+        </h2>
+      </div>
     <div>
       <DataCard userName={userName} />
+    </div>
     </div>
   );
 }
