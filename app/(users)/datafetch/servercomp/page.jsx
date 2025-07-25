@@ -38,7 +38,7 @@ const DataFetchServer = async (props) => {
         </h2>
       </div>
     <div>
-      <Suspense>
+      <Suspense fallback={<div><h1>Loading....</h1></div>}>
       <DataCard userName={userName} />
       </Suspense>
     </div>
