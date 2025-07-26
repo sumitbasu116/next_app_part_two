@@ -8,7 +8,13 @@ const StaticPage = async () => {
         <>
             <h1>Hello Database</h1>
             <div>
-
+                <ul>
+                {
+                    doctors.map((doctor)=>{
+                       <li key={doctor.id}>{doctor.first_name}</li> 
+                    })
+                }
+                </ul>
             </div>
         </>
     );
