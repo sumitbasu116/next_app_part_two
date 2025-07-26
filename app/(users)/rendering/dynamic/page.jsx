@@ -1,4 +1,7 @@
 import { db } from "@/config/db.jsx";
+
+export const dynamic = 'force-dynamic';
+
 const StaticPage = async () => {
     const [doctors] = await db.execute("select * from Doctor");
     console.log('Dynamic Page');
