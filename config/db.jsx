@@ -9,10 +9,10 @@ export const db = mysql.createPool({
 
 try{
     const connection = await db.getConnection();
-    console.log("Database Connected Successfully");
+    console.log("✅ Database Connected Successfully");
     connection.release();
     
 }catch(err){
-    connection.error("Database Connected Failed",err);
+    connection.error("❌ Database Connected Failed",err);
     process.exit(1);
 }
